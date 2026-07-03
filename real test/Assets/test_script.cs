@@ -4,6 +4,8 @@ public class test_script : MonoBehaviour
 {
     public static int myCoolInt = 0;
     public int CoolerTest = 0;
+    public static bool myCoolBool = false;
+    public bool CoolerBool = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

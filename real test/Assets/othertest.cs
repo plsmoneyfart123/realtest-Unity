@@ -7,6 +7,7 @@ public class othertest : MonoBehaviour
     {
         int x = test_script.myCoolInt;
         print (x);
+        bool y = test_script.myCoolBool;
     }
 
     // Update is called once per frame
