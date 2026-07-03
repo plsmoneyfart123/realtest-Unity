@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class test_script : MonoBehaviour
 {
-    static int myCoolInt = 0;
-    int CoolerTest = 0;
+    public static int myCoolInt = 0;
+    public int CoolerTest = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
