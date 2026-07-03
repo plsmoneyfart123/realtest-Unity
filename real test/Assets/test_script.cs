@@ -1,0 +1,22 @@
+using UnityEngine;
+
+public class test_script : MonoBehaviour
+{
+    static int myCoolInt = 0;
+    int CoolerTest = 0;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        myCoolInt += 2;
+        CoolerTest += 2;
+        print (myCoolInt);
+        print (CoolerTest);
+    }
+    
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
