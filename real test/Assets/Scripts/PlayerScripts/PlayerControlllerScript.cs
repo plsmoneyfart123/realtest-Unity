@@ -28,6 +28,20 @@ public class PlayerControlllerScript : MonoBehaviour
         horizontal = context.ReadValue<Vector2>().x;
     }
 
+    public void Jump(InputAction.CallbackContext context)
+    {
+        if (context.performed && IsGrounded())
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpingpower);
+        }
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCapsule(groundChenk.position, new Vector2(0.65f, 0.1f), CapsuleDirection2D.Horizontal, 0, groundlayer);
+    }
+
     #endregion
+
 
 }
