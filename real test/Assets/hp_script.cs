@@ -4,18 +4,17 @@ using UnityEngine.SceneManagement;
 using System;
 public class hp_script : MonoBehaviour
 {
-    [SerializeField] float hp;
+    private float hp;
     [SerializeField] Text helloSir;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        hp = 100;
-        
+        hp = 100f;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        helloSir.text = ("hp " + hp );
     }
 }
