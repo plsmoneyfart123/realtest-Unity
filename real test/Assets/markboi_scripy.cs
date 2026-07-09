@@ -10,6 +10,7 @@ public class markboi_scripy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+       mark.transform.position = new Vector2(15.36f, -1.04f);
       int goob = Random.Range(0,3);
         if (goob == 0)
         {
@@ -21,6 +22,10 @@ public class markboi_scripy : MonoBehaviour
         {
             sound3.Play();
         }
+       
+        
+            
+        
     }
 
     // Update is called once per frame
